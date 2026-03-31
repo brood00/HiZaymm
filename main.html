@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <title>Hi Client</title>
+</head>
+
+<body>
+    <div class="hero-section">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(images/img-slider-1.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(images/img-slider-2.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(images/img-slider-3.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(images/img-slider-4.jpg);"></div>
+            </div>
+
+            <div class="hero-overlay">
+                <header class="header">
+                    <div class="container">
+                        <div class="header__wrapper">
+                            <div class="logo__wrapper">
+                                <a href="#" class="logo"><img src="images/logo.svg" alt=""></a>
+                                <a href="#" class="text__logo">Hi Client</a>
+                            </div>
+
+                            <div class="burger" id="burger-menu">
+                                <div class="burger__menu-wrapper"><img src="images/burger.svg" alt=""
+                                        class="burger__icon-open"></div>
+                                <img src="images/close.svg" alt="" class="burger__icon-close">
+                            </div>
+
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">О нас</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Как получить</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Как вернуть</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Как продлить</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Вопросы и ответы</a>
+                                    </li>
+                                </ul>
+
+                            </nav>
+
+                            <nav class="menu__mobile" id="mobile-menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link menu__link-account"><img
+                                                src="images/account-logo-mobile.svg" alt=""> Личный кабинет</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link menu__link-phone"><img
+                                                src="images/phone-logo-mobile.svg" alt=""> <span
+                                                class="text--mobile-small">+7(3952)</span> 66 22 45</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">О нас</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Возможности</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Как это работает</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Тарифы</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Вопросы и ответы</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+
+                            <div class="contact__wrapper">
+                                <div class="phone__wrapper">
+                                    <img src="images/phone-call.svg" alt="">
+                                    <a href="#" class="phone__link"><span class="text-opacity">+7(3952)</span> 66 22
+                                        45</a>
+                                </div>
+                                <div class="account__wrapper">
+                                    <img src="images//account.svg" alt="">
+                                    <a href="#" class="account__link">Личный кабинет</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="welcome">
+                    <div class="container">
+                        <div class="welcome__content">
+                            <div class="welcome__content-left">
+                                <h1 class="title__welcome">Порядок в клиентах за 5 минут</h1>
+                                <p class="subtitle__welcome">Заполните форму и получите готовый календарь для вашего
+                                    бизнеса.</p>
+                                <a href="#" class="calendar__link"><img src="images/calendar-icon.svg" alt=""></a>
+                                <div class="wrapper__textcontent-welcome">
+                                    <p class="text__description-welcome">Ваши клиенты будут записываться онлайн без
+                                        звонков и очередей.</p>
+                                    <p class="info__text-welcome">Подключение <span
+                                            class="color--green">бесплатно</span> за 2 минуты</p>
+                                </div>
+                            </div>
+                            <div class="welcome__content-right">
+                                <div class="calc__card">
+                                    <div class="calc__item">
+                                        <div class="calc__label">
+                                            <span>Кол-во сотрудников:</span>
+                                            <span class="calc__value" id="staff-val">10</span>
+                                        </div>
+                                        <input type="range" min="1" max="50" value="10" class="range__slider"
+                                            id="staff-range">
+                                    </div>
+
+                                    <div class="calc__item">
+                                        <div class="calc__label">
+                                            <span>Клиентов в день:</span>
+                                            <span class="calc__value" id="clients-val">10</span>
+                                        </div>
+                                        <input type="range" min="1" max="100" value="10" class="range__slider"
+                                            id="clients-range">
+                                    </div>
+
+                                    <a href="contact.html" class="btn__primary">Подключиться бесплатно</a>
+
+                                    <ul class="benefits__list">
+                                        <li>
+                                            <div class="circle--green"></div>Быстрое подключение
+                                        </li>
+                                        <li>
+                                            <div class="circle--green"></div>Настраиваемое расписание
+                                        </li>
+                                        <li>
+                                            <div class="circle--green"></div>Уведомления клиентам и сотруднику
+                                        </li>
+                                        <li>
+                                            <div class="circle--green"></div>Без путаницы и пропущенных клиентов
+                                        </li>
+                                    </ul>
+
+                                    <div class="calc__welcome-wrapper">
+                                        <div class="calc__tooltip">
+                                            Для новых клиентов <span>HiClient</span><br>
+                                            — 1 месяц бесплатно.<br>
+                                            Далее — всего 300 ₽/месяц.<br>
+                                            Без комиссий и доплат.
+                                        </div>
+                                        <p class="calc__welcome-link">Сколько это стоит?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <section class="info">
+            <div class="container">
+                <h2 class="title__info">Как начать работу</h2>
+                <div class="cards__wrapper-info">
+                    <button class="btn__scroll-top"><img src="images/arrow-scroll.svg" alt=""></button>
+                    <div class="card__info card__info-one">
+                        <div class="card__info-images-wrapper">
+                            <img class="card__info-img" src="images/card-info-1.png" alt="">
+                            <img class="line__img" src="images/Line.svg" alt="">
+                        </div>
+                        <h4 class="title__card-info">Оформите заявку на подключение</h4>
+                        <p class="subtitle__card-info">Нажмите «Подключиться бесплатно» и заполните форму. Никаких
+                            банковских карт и сложных настроек.</p>
+                    </div>
+                    <div class="card__info card__info-two">
+                        <div class="card__info-images-wrapper">
+                            <img class="card__info-img" src="images/card-info-2.png" alt="">
+                            <img class="line__img" src="images/Line.svg" alt="">
+                        </div>
+                        <h4 class="title__card-info title__card-info-two">Добавьте сотрудников</h4>
+                        <p class="subtitle__card-info">Укажите сотрудников, настройте их рабочее расписание и перерывы.
+                        </p>
+                    </div>
+                    <div class="card__info card__info-three">
+                        <div class="card__info-images-wrapper">
+                            <img class="card__info-img" src="images/card-info-3.png" alt="">
+                            <img class="line__img" src="images/Line.svg" alt="">
+                        </div>
+                        <h4 class="title__card-info">Получите ссылку на форму для записи</h4>
+                        <p class="subtitle__card-info">Готовая страница записи появится сразу. Отправьте её клиентам или
+                            встройте на сайт.</p>
+                    </div>
+                    <div class="card__info card__info-four">
+                        <div class="card__info-images-wrapper">
+                            <img class="card__info-img" src="images/card-info-4.png" alt="">
+                            <img class="line__img" src="images/Line.svg" alt="">
+                        </div>
+                        <h4 class="title__card-info">Запись клиентов</h4>
+                        <p class="subtitle__card-info">Клиенты видят свободные окна и бронируют время. Вы получаете
+                            уведомления и не теряете заявки.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info-images">
+            <div class="container">
+                <div class="wrapper__cards-info-images">
+                    <div class="card__info-images card__info-images-one">
+                        <h4 class="title__card-info-images">Экономьте 30 часов в месяц на рутине</h4>
+                        <p class="subtitle__card-info-images">Вместо обзвонов и напоминаний — <br> занимайтесь развитием
+                            бизнеса и новыми клиентами. Автоматика делает всю работу за вас.</p>
+                        <div class="block-height-small"></div>
+                        <img class="images-card__info-img--mobile images-card__info-img--mobile-1"
+                            src="images/card-info-images-1.png" alt="">
+                    </div>
+                    <div class="card__info-images card__info-images-two">
+                        <h4 class="title__card-info-images">Клиенты записываются сами 24/7</h4>
+                        <p class="subtitle__card-info-images">Никаких обзвонов и согласований. <br> Клиенты видят
+                            свободные окна и бронируют время онлайн — <br> даже ночью, в выходные, когда вы отдыхаете.
+                        </p>
+                        <img class="images-card__info-img--mobile images-card__info-img--mobile-2"
+                            src="images/card-info-images-2.png" alt="">
+                        <img class="images-card__info-img--mobile-dn images-card__info-img--mobile-dn-1"
+                            src="images/card-info-images-mobile-2.svg" alt="">
+                    </div>
+                    <div class="card__info-images card__info-images-three">
+                        <h4 class="title__card-info-images">Никто не забывает прийти — автоматические напоминания</h4>
+                        <p class="subtitle__card-info-images">Клиенты получают уведомления в Telegram и в других
+                            мессенджерах Вы больше не теряете заявки из-за забывчивости.</p>
+                        <img class="images-card__info-img--mobile images-card__info-img--mobile-3"
+                            src="images/card-info-images-3.png" alt="">
+                    </div>
+                    <div class="card__info-images card__info-images-four">
+                        <h4 class="title__card-info-images">Всё расписание сотрудников в одном окне</h4>
+                        <p class="subtitle__card-info-images">Никаких блокнотов, перекрёстных звонков и двойных броней.
+                            Каждый видит свои записи, вы видите всё.</p>
+                        <img class="images-card__info-img--mobile images-card__info-img--mobile-4"
+                            src="images/card-info-images-4.png" alt="">
+                        <img class="images-card__info-img--mobile-dn images-card__info-img--mobile-dn-2"
+                            src="images/card-info-images-mobile-3.png" alt="">
+                        <div class="block-height"></div>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn__primary btn__primary-info">Подключиться бесплатно</a>
+            </div>
+        </section>
+        <section class="price">
+            <div class="container">
+                <div class="content__top-price">
+                    <div class="title__price-wrapper">
+                        <img src="images/price-logo.svg" alt="">
+                        <h2 class="title__price">ТАРИФЫ</h2>
+                    </div>
+                    <p class="subtitle__price">Выберите подходящий план для вашего роста</p>
+                </div>
+                <div class="wrapper__cards-price">
+                    <div class="card__price">
+                        <p class="time__price">Месяц</p>
+                        <p class="title__card-price">300 <span class="text--small">/ ₽</span></p>
+                        <ul class="price__list">
+                            <li class="price__item">
+                                <div class="circle-item-price"></div>Неограниченное число записей
+                            </li>
+                            <li class="price__item">
+                                <div class="circle-item-price"></div>Онлайн-запись 24/7
+                            </li>
+                            <li class="price__item">
+                                <div class="circle-item-price"></div>SMS и мессенджер-уведомления
+                            </li>
+                            <li class="price__item">
+                                <div class="circle-item-price"></div>Базовая аналитика доходов
+                            </li>
+                            <li class="price__item">
+                                <div class="circle-item-price"></div>Доступ с любого устройства
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="price__card-btn">Начать работу</a>
+                    </div>
+                    <div class="card__price">
+                        <p class="time__price">Год</p>
+                        <p class="title__card-price">3000 <span class="text--small">/ ₽</span></p>
+                        <ul class="price__list">
+                            <li class="price__item">
+                                <div class="circle-item-price"></div>Всё, что в месячном тарифе
+                            </li>
+                            <li class="price__item">
+                                <div class="circle-item-price"></div>Приоритетная техподдержка
+                            </li>
+                            <li class="price__item">
+                                <div class="circle-item-price"></div>Персональная настройка профиля
+                            </li>
+                            <li class="price__item">
+                                <div class="circle-item-price"></div>Расширенная CRM-статистика
+                            </li>
+                            <li class="price__item">
+                                <div class="circle-item-price"></div>Скидка 20% на автоматизацию
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="price__card-btn">Начать работу</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <div class="container">
+                <h3 class="title__service">Hi Client — ваш надежный сервис для онлайн записи клиентов</h3>
+                <div class="service__content-bottom">
+                    <div class="service__content-bottom-left">
+                        <div class="box__wrapper-service">
+                            <h4 class="title__box-service">Hi Client — это простой инструмент, который помогает бизнесу
+                                забыть про обзвоны, блокноты и потерянные заявки.</h4>
+                            <p class="subtitle__box-service">Каждый день десятки предпринимателей подключают наш сервис,
+                                чтобы клиенты записывались сами 24/7, сотрудники видели
+                                актуальное расписание, а бизнес не терял деньги из-за путаницы и забывчивости.</p>
+                        </div>
+                    </div>
+                    <div class="service__content-bottom-right">
+                        <div class="cards__service-wrapper">
+                            <div class="card__service">
+                                <img src="images/card-service-1.svg" alt="">
+                                <p class="text__service-card">Онлайн-запись клиентов 24/7 без перерывов</p>
+                            </div>
+                            <div class="card__service">
+                                <img src="images/card-service-2.svg" alt="">
+                                <p class="text__service-card">Автоматическая отчетность и бизнес-аналитика</p>
+                            </div>
+                            <div class="card__service">
+                                <img src="images/card-service-3.svg" alt="">
+                                <p class="text__service-card">Полная история визитов и CRM-база клиентов</p>
+                            </div>
+                            <div class="card__service card__service-4">
+                                <img src="images/card-service-4.svg" alt="">
+                                <p class="text__service-card text__service-card-4">Надежная защита данных и вашего
+                                    расписания</p>
+                            </div>
+                            <div class="card__service card__service-5">
+                                <img src="images/card-service-5.svg" alt="">
+                                <p class="text__service-card">Контроль финансов и статистики записей</p>
+                            </div>
+                            <div class="card__service">
+                                <img src="images/card-service-6.svg" alt="">
+                                <p class="text__service-card">Снижение неявок через СМС-уведомления</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="question">
+            <div class="container">
+                <h3 class="title__question">Ответы на популярные вопросы</h3>
+                <div class="faq__list">
+
+                    <div class="faq__item">
+                        <button class="faq__trigger">
+                            <p class="title__faq">Для кого подходит сервис <span class="color--light-green">HiClient
+                                    ?</span></p>
+                            <div class="faq__arrow"></div>
+                        </button>
+                        <div class="faq__content">
+                            <div class="faq__inner">
+                                <p class="text__faq">Наш сервис идеально подходит для мастеров бьюти-индустрии,
+                                    репетиторов, врачей, фотографов и любого бизнеса в сфере
+                                    услуг, где требуется запись по времени.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button class="faq__trigger">
+                            <p class="title__faq">Как начать принимать записи онлайн <span
+                                    class="color--light-green">?</span></p>
+                            <div class="faq__arrow"></div>
+                        </button>
+                        <div class="faq__content">
+                            <div class="faq__inner">
+                                <p class="text__faq">Просто зарегистрируйтесь, добавьте свои услуги и график работы.
+                                    Сервис создаст персональную ссылку, которую можно
+                                    разместить в соцсетях или отправить клиенту.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button class="faq__trigger">
+                            <p class="title__faq">Как быстро я настрою свой профиль <span
+                                    class="color--light-green">?</span></p>
+                            <div class="faq__arrow"></div>
+                        </button>
+                        <div class="faq__content">
+                            <div class="faq__inner">
+                                <p class="text__faq">Первичная настройка занимает всего 10–15 минут. Вы можете начать
+                                    работу сразу после заполнения базовой информации о
+                                    ваших услугах.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button class="faq__trigger">
+                            <p class="title__faq">Нужно ли клиентам скачивать приложение <span
+                                    class="color--light-green">?</span></p>
+                            <div class="faq__arrow"></div>
+                        </button>
+                        <div class="faq__content">
+                            <div class="faq__inner">
+                                <p class="text__faq">Нет, запись происходит через удобную веб-форму. Клиент открывает
+                                    ссылку в любом браузере на телефоне и записывается за
+                                    30 секунд.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__trigger">
+                            <p class="title__faq">Как работают напоминания для клиентов <span
+                                    class="color--light-green">?</span></p>
+                            <div class="faq__arrow"></div>
+                        </button>
+                        <div class="faq__content">
+                            <div class="faq__inner">
+                                <p class="text__faq">Система автоматически отправляет уведомления о визите через SMS или
+                                    мессенджеры. Вы сами выбираете время напоминания
+                                    (например, за 2 или 24 часа).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__trigger">
+                            <p class="title__faq">Можно ли вести учет нескольких сотрудников <span
+                                    class="color--light-green">?</span></p>
+                            <div class="faq__arrow"></div>
+                        </button>
+                        <div class="faq__content">
+                            <div class="faq__inner">
+                                <p class="text__faq">Да, <span class="color--light-green">HiClient</span> поддерживает
+                                    многопользовательский режим. Вы можете добавить своих мастеров, настроить им разные
+                                    графики и
+                                    уровни доступа.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__trigger">
+                            <p class="title__faq">Как работает контроль финансов и оплат <span
+                                    class="color--light-green">?</span></p>
+                            <div class="faq__arrow"></div>
+                        </button>
+                        <div class="faq__content">
+                            <div class="faq__inner">
+                                <p class="text__faq">Сервис фиксирует стоимость каждого визита, формируя наглядную
+                                    статистику ваших доходов, расходов и среднего чека в
+                                    разделе аналитики.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__trigger">
+                            <p class="title__faq">Что если клиент хочет отменить запись <span
+                                    class="color--light-green">?</span></p>
+                            <div class="faq__arrow"></div>
+                        </button>
+                        <div class="faq__content">
+                            <div class="faq__inner">
+                                <p class="text__faq">Клиент может отменить или перенести визит по ссылке в уведомлении
+                                    (если вы это разрешили). Ваше расписание обновится
+                                    мгновенно.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__trigger">
+                            <p class="title__faq">Синхронизируется ли запись с календарем <span
+                                    class="color--light-green">?</span></p>
+                            <div class="faq__arrow"></div>
+                        </button>
+                        <div class="faq__content">
+                            <div class="faq__inner">
+                                <p class="text__faq">Да, <span class="color--light-green">HiClient</span> легко
+                                    интегрируется с Google Календарем. Ваши личные дела и рабочие окна больше никогда не
+                                    пересекутся.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__trigger">
+                            <p class="title__faq">Безопасно ли хранятся данные клиентов <span
+                                    class="color--light-green">?</span></p>
+                            <div class="faq__arrow"></div>
+                        </button>
+                        <div class="faq__content">
+                            <div class="faq__inner">
+                                <p class="text__faq">Мы используем зашифрованные облачные сервера. Ваша база клиентов и
+                                    история посещений защищены и доступны только вам с
+                                    любого устройства.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__trigger">
+                            <p class="title__faq">Можно ли настроить запись через VK или Instagram <span
+                                    class="color--light-green">?</span></p>
+                            <div class="faq__arrow"></div>
+                        </button>
+                        <div class="faq__content">
+                            <div class="faq__inner">
+                                <p class="text__faq">Конечно! Просто вставьте вашу уникальную ссылку в шапку профиля или
+                                    кнопку «Записаться». Это увеличивает поток клиентов
+                                    из соцсетей.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__trigger">
+                            <p class="title__faq">Как работает техническая поддержка <span
+                                    class="color--light-green">?</span></p>
+                            <div class="faq__arrow"></div>
+                        </button>
+                        <div class="faq__content">
+                            <div class="faq__inner">
+                                <p class="text__faq">Если у вас возникнут вопросы по настройке, наша команда поддержки
+                                    на связи ежедневно. Напишите нам в чат внутри сервиса,
+                                    и мы поможем.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border__question">
+        </section>
+        <a href="contact.html" class="btn__primary btn__question">Подключиться бесплатно</a>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info-box">
+                    <div class="wrapper__logo-footer">
+                        <img src="images/footer-logo.svg" alt="">
+                        <h5 class="footer__logo-text">Hi Client</h5>
+                    </div>
+                    <a href="" class="footer__email-link">info@hizaim.ru</a>
+                    <a href="" class="footer__phone-link"><img src="images/phone-call-gray.svg" alt=""><span
+                            class="text--light">+7(3952)</span> 66 22 45</a>
+                </div>
+                <ul class="footer__list">
+                    <p class="footer__list-title">Информация:</p>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Пользовательское соглашение</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Публичная оферта</a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__list-2">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Согласие на обработку персональных данных</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Как это работает</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Вопросы и ответы</a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__list-2">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Поддержка</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Контакты</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link"><img src="images/vk-logo.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__fly-box">
+            <p class="fly__box-text">Вы не теряете заявки, даже когда спите</p>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</html>

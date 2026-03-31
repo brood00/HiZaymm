@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="reset.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            // Твой Public Key
+            emailjs.init("HSxFo5zxnYSH_byuZ");
+        })();
+    </script>
+    <title>Форма заявок</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="logo__wrapper">
+                    <a href="main.html"><img src="images/logo.svg" alt=""></a>
+                    <a href="main.html" class="text__logo">Hi Client</a>
+                </div>
+
+                <div class="burger-contact" id="burger-menu-contact">
+                    <div class="burger__menu-wrapper-contact">
+                        <img src="images/burger.svg" alt="Открыть меню" class="burger__icon-open-contact">
+                    </div>
+                    <img src="images/close.svg" alt="Закрыть меню" class="burger__icon-close-contact">
+                </div>
+
+                <nav class="menu">
+                    <a href="#" class="menu__link">Заявка на подключение</a>
+                </nav>
+                <nav class="menu__mobile-contact">
+                    <a href="#" class="menu__link menu__link-account"><img src="images/account-logo-mobile.svg"
+                            alt="">Личный кабинет</a>
+                    <a href="#" class="menu__link menu__link-phone"><img src="images/phone-logo-mobile.svg" alt=""><span
+                            class="text-opacity">+7(3952)</span> 66 22 45</a>
+                </nav>
+                <div class="contact__header-wrapper">
+                    <div class="phone__wrapper">
+                        <img src="images/phone-call.svg" alt="">
+                        <a href="#" class="phone__link"><span class="text-opacity">+7(3952)</span> 66 22
+                            45</a>
+                    </div>
+                    <div class="account__wrapper">
+                        <img src="images//account.svg" alt="">
+                        <a href="#" class="account__link">Личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="menu__link menu__link-mobile">Заявка на подключение</a>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="welcome">
+            <div class="shadow__line-welcome"></div>
+            <div class="line__welcome"></div>
+            <div class="container">
+                <div class="welcome__wrapper">
+                    <form action="https://formspree.io/f/maqlordy" id="mainForm" method="POST">
+                        <div class="welcome__content-top">
+                            <div class="box-step__welcome">
+                                <p class="number-step">1</p>
+                                <p class="text-step">Контактная информация:</p>
+                            </div>
+                        </div>
+                        <h1 class="title__welcome">Шаг 1: Контактная информация</h1>
+                        <div class="form__welcome-group-one">
+                            <div class="input__group">
+                                <label class="label__welcome-input" for="">Фамилия:</label>
+                                <input type="text" name="last_name" class="form__welcome-input" required minlength="3">
+                                <span class="error-hint">Минимум 3 символа</span>
+                            </div>
+                            <div class="input__group">
+                                <label class="label__welcome-input" for="">Имя:</label>
+                                <input type="text" name="first_name" class="form__welcome-input" required minlength="2">
+                                <span class="error-hint">Минимум 2 символа</span>
+                            </div>
+                            <div class="input__group">
+                                <label class="label__welcome-input" for="">Отчество:</label>
+                                <input type="text" name="middle_name" class="form__welcome-input" minlength="3">
+                                <span class="error-hint">Минимум 3 символа</span>
+                            </div>
+                        </div>
+                        <div class="form__welcome-group-two">
+                            <div class="input__group">
+                                <label class="label__welcome-input" for="">Электронная почта:</label>
+                                <input type="email" name="email" class="form__welcome-input" required>
+                                <span class="error-hint">Заполните email корректно</span>
+                            </div>
+                            <div class="input__group">
+                                <label class="label__welcome-input" for="">Мобильный телефон:</label>
+                                <input type="tel" name="phone" class="form__welcome-input"
+                                    placeholder="+7 (_ _ _)-___-__-__" required>
+                                <span class="error-hint">Заполните номер корректно</span>
+                            </div>
+                        </div>
+                        <div class="welcome__btn-group">
+                            <button class="welcome__form-btn">Начать работу</button>
+                            <div class="confirm__group-welcome">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" class="checkbox__welcome-form">
+                                    <span class="custom-checkbox"></span>
+                                    <p class="text__confirm"><span class="text--bold">Нажимая кнопку “Начать
+                                            работу”</span>,
+                                        я
+                                        выражаю свое согласие с Условиями
+                                        использования
+                                        сервиса и даю согласие на обработку
+                                        моих персональных данных.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul class="footer__list footer__list-empty">
+                    <li class="footer__item">
+                        <a href="" class="footer__link"></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link"></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__link"></a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <h4 class="footer__list-title">Документы:</h4>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Пользовательское соглашение</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Согласие на рассылку</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <h4 class="footer__list-title">Помощь:</h4>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Написать в МАХ</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Написать на почту</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Частые вопросы (FAQ)</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <h4 class="footer__list-title">О сервисе:</h4>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Тарифы</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">support@hiclient.ru</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">ИНН 1234567890</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer__copyrigth-text">© 2024 HiClient. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="contact.js"></script>
+
+</html>
